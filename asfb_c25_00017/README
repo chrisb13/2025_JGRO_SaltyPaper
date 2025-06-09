@@ -1,0 +1,26 @@
+*****************************************************
+*          NEMO SIMULATION                          *
+*   project   n02-RASP                     *
+*   config    asfb_c25                     *
+*   NEMOexe   /mnt/lustre/a2fs-work2/work/n02/n02/chbull/nemo/models/NEMO404_MO/tests/asfdyn_buoy3/BLD/bin/nemo.exe                     *
+*   case      00017                     *
+*   Desc      Another go at doing runs for ASF with buoyancy forcing (for second tipaccs deliv). sea ice like buoyancy offset experiments in this case.  This is a second attempt at improved restoring, salinity restoring is back on but hopefully only at the northern boundary. See hacked my_src tradmp.F90.  hacked sbcflx.F90 file to accept a virtual salt flux input with hacked forcing here with multiple of 1000 times 0.035 for 100 years (production runs). Turned non-linear free surface back ON. Using bathy with ridge bump in deep ocean (6.2.24 new bathymetries for re-runs for winds paper revision) and turned on GM as per winds paper revision. Case 16 is the same as 17 just that 17 is for 100 years.                     *
+*   Date      2024-06-09 07:26:18.274292                     *
+*                                                   *
+*   Users choices:                                 *
+*   rP_PROJ        n02-RASP                      *
+*   rP_CONFIG      asfb_c25                      *
+*   rP_CONFIG_TYPE ASF_buoy                      *
+*   BFILE       /mnt/lustre/a2fs-work2/work/n02/n02/chbull/nemo/bld_configs/input_ASF_buoy/new_bathy_ASF_c37_deeprid.nc                      *
+*   TSFILE      /mnt/lustre/a2fs-work2/work/n02/n02/chbull/nemo/bld_configs/input_ASF_buoy/TS_init_c03_woa2018_salinityhacked.nc                      *
+*   FLXFILE      /mnt/lustre/a2fs-work2/work/n02/n02/chbull/nemo/bld_configs/input_ASF_buoy/newflxforce_sfx2/flxforce_case_si_04_grid_.nc                      *
+*   rP_CASE        00017                      *
+*   rP_YEAR0       1                      *
+*   rP_YEAR_MAX    100                      *
+*   RDIR        /work/n02/n02/chbull/nemo/run                      *
+*   rP_WORKDIR     /work/n02/n02/chbull/nemo/run/asfb_c25_00017                      *
+*   rP_STOCKDIR    /work/n02/n02/chbull/nemo/nemo_output                      *
+*   rP_CONFIG     asfb_c25                      *
+*   FORCING     /work/n01/shared/core2                      *
+*   NEMOdir     /work/n02/n02/chbull/nemo/models/NEMO404_MO/                      *
+*****************************************************
